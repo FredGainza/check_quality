@@ -11,7 +11,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.x"
+          python-version: "3.11"
 
       - name: Install pytest and flake8
         run: |
@@ -23,6 +23,4 @@ jobs:
           pytest
 
       - name: Run flake8 Lint
-        uses: py-actions/flake8@v2
-
-        
+        uses: py-actions/flake8@v2.2.1
