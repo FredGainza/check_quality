@@ -6,6 +6,9 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Install pytest
+        run: |
+          pip install pytest
       - name: Push a file to your repository
         run: |
           pwd
