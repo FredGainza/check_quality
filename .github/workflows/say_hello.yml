@@ -1,0 +1,14 @@
+name: salutation sur un jour quelconque
+on: workflow_dispatch
+env:
+  DAY_OF_WEEK: Lundi ## Variable d'env pour l'ensemble du flux de tarvail
+jobs:
+  grettng_job:
+    runs-on: ubuntu-latest
+    env:
+      Gretting: Salut ## Variable d'env pour la tâche
+    steps:
+      - name: "Dites Salut Mona nous sommes lundi"
+        run: echo "$Gretting $First_Name. Nous sommmes $DAY_OF_WEEK!"
+        env:
+          Fist_Name: Mona ## Variable d'env uniquement pour l'étape "Dites Salut Mona nous sommes lundi" de la tâche "gretting_job"
