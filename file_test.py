@@ -5,15 +5,18 @@ def test_calc_addition():
 
 
 def test_calc_substraction():
+    # Fonction test du résultat 2-4
     output = 2-4
     assert output == -2
 
 
 def test_calc_multiply():
+    # Fonction test du résultat 2*4
     output = 2*4
     assert output == 8
 
 
 def test_coucou():
+    # Fonction test qui renvoie hello
     output = "hello"
     assert output == "hello"
