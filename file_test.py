@@ -13,11 +13,9 @@ def test_calc_substraction():
 def test_calc_multiply():
 	# Fonction test du résultat 2*4
 	output = 2*4
-	asset output == 8
+	assert output == 8
 
 def test_coucou()
 	# Fonction test qui renvoie coucou
 	output = "hello"
 	assert output == "hello"
-
-
